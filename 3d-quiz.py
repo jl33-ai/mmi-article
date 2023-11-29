@@ -69,10 +69,10 @@ responses = [3] * 18 # = [3 for _ in range(18)]
 
 # calculate each of 3 axes
 def calculate_characteristics():
-    agency_vs_fatalism = sum(responses[:6])
+    technical_vs_nontechnical = sum(responses[:6])
     optimism_vs_pessimism = sum(responses[6:12])
-    technical_vs_nontechnical = sum(responses[12:])
-    return agency_vs_fatalism/15-1, optimism_vs_pessimism/15-1, technical_vs_nontechnical/15-1
+    agency_vs_fatalism = sum(responses[12:])
+    return technical_vs_nontechnical/15-1, optimism_vs_pessimism/15-1, agency_vs_fatalism/15-1
 
 
 def classify_ai_personality(agency_score, optimism_score, technical_score):
@@ -129,9 +129,9 @@ def render_basic_radar(data):
         
         "radar": {
             "indicator": [
-                {"name": "Agency", "max": 1},
-                {"name": "Optimism", "max": 1},
                 {"name": "Technicality", "max": 1},
+                {"name": "Optimism", "max": 1},
+                {"name": "Agency", "max": 1},
             ],
             "splitNumber": 5
         },
@@ -170,7 +170,7 @@ def render_plotly(char1, char2, char3):
         height = 500,
         scene=dict(
             xaxis=dict(
-                title='Agency vs Fatalism',
+                title='Technical vs Non-Technical',
                 range=[-1, 1]  # Set the range for x-axis
             ),
             yaxis=dict(
@@ -178,7 +178,7 @@ def render_plotly(char1, char2, char3):
                 range=[-1, 1]  # Set the range for y-axis
             ),
             zaxis=dict(
-                title='Technical vs Non-Technical',
+                title='Agency vs Fatalism',
                 range=[-1, 1]  # Set the range for z-axis
             )
         ),
