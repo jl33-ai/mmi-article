@@ -7,25 +7,25 @@ from random import sample
 questions = [
     # Technical vs Non-Technical
     "I grasp how AI algorithms learn and make decisions.",
-    "The intricacies of AI make its ethical deployment challenging.",
+    "The intricacies of AI make its ethics challenging.",
     "I would feel comfortable explaining how a neural network works to a friend.",
-    "I stay updated on AI advancements and their societal discussions.",
+    "I feel as though I stay up to date on the state of the art in AI development",
     "AI ethics should primarily involve those deeply versed in the technology.",
     "My trust in AI is based on its reliability, not the complexity behind it.",
 
     # Optimism vs Pessimism
     "AI will be a net positive for job creation.",
     "In the next two decades, AI will substantially elevate our quality of life.",
-    "The media tends to exaggerate the risks associated with AI.",
+    "I feel Government policies are keeping up with the pace of AI development.",
     "I would feel comfortable allowing an AI tutor to teach my child.",
     "I would ask ChatGPT for help if I was CEO of my company.",
-    "I believe that there will be no more AI winters.",
+    "I believe that AI doubters are just lacking information and understanding.",
 
     # Agency vs Fatalism
-    "Humans have the capacity to steer AI development effectively.",
-    "AI's evolution is beyond significant human influence.",
+    "I do not mind others around me using tools like ChatGPT to substitute work responsibly.",
+    "I feel empowered to use AI as a tool for personal and professional growth.",
     "I believe that we will always be able to shape AI's trajectory.",
-    "AI's influence on our daily decision-making is overstated.",
+    "I believe that understanding AI is crucial for staying relevant in my career.",
     "I'm confident that I can adjust my career amidst AI changes.",
     "Current laws will adequately regulate AI's societal effects.",
 ]
@@ -174,7 +174,7 @@ def render_plotly(char1, char2, char3):
                 range=[-1, 1]  # Set the range for x-axis
             ),
             yaxis=dict(
-                title='Optimism vs Pessimism',
+                title='Pessimism vs Optimism',
                 range=[-1, 1]  # Set the range for y-axis
             ),
             zaxis=dict(
