@@ -120,8 +120,16 @@ def classify_ai_personality(agency_score, optimism_score, technical_score):
 
 # Streamlit app
 def main():
-    st.sidebar.write('Made by Justin Lee')
-    st.title("Reveal your AI Identity")
+    
+    st.set_page_config(
+        page_title='Your AI Identity',  # Add your app title here
+        layout='centered',  # Can be "centered" or "wide". "wide" is the default.
+
+    )
+    st.sidebar.markdown('Find the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
+    st.sidebar.write('##### Made by Justin Lee')
+
+    st.title("Your AI Identity")
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
     with st.form(key='questions_form'):
@@ -132,8 +140,9 @@ def main():
 
     if submit_button:
         char1, char2, char3 = calculate_characteristics()
-        st.write(f'##### Your AI personality is: **{classify_ai_personality(char1, char2, char3)}**')
-        st.write('See where you lie on the spectrum:')
+        st.write(f'##### Your AI personality is: ')
+        st.write(f'# `{classify_ai_personality(char1, char2, char3)}`')
+        st.write(f'##### See where you lie on the spectrum:')
 
         # 3D Plotting using Plotly
         fig = go.Figure(data=[go.Scatter3d(
@@ -141,7 +150,7 @@ def main():
             y=[char2],
             z=[char3],
             mode='markers',
-            marker=dict(size=15, color='blue')
+            marker=dict(size=10, color='red', symbol='diamond')
         )])
 
         # Update the layout
@@ -149,7 +158,7 @@ def main():
 
         # Update the layout
         fig.update_layout(
-            width = 800,
+            width = 700,
             height = 800,
             scene=dict(
                 xaxis=dict(
