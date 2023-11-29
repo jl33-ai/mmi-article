@@ -1,8 +1,7 @@
 import streamlit as st
 import plotly.graph_objects as go
+from streamlit_echarts import st_echarts
 from random import sample
-
-# Add a quote and a diagram from the side. 
 
 
 questions = [
@@ -121,11 +120,76 @@ def classify_ai_personality(agency_score, optimism_score, technical_score):
 
     return personalities.get((agency, optimism, technical), 'Undefined Personality')
 
+def render_basic_radar(data):
+    option = {
+        "title": {
+            "textStyle": {"fontSize": 16, "fontWeight": "bold"},
+            "left": "center"
+        },
+        
+        "radar": {
+            "indicator": [
+                {"name": "Agency", "max": 1},
+                {"name": "Optimism", "max": 1},
+                {"name": "Technicality", "max": 1},
+            ],
+            "splitNumber": 5
+        },
+        "series": [
+            {
+                "name": "Data",
+                "type": "radar",
+                "data": [
+                    {
+                        "value": data,
+                        "name": "Grades by Title",
+                        "areaStyle": {"color": "#87d068"}
+                    }
+                ],
+            }
+        ],
+    }
+    st_echarts(option, height="500px")
+    #st.markdown('---')
+
+def render_plotly(char1, char2, char3):
+    fig = go.Figure(data=[go.Scatter3d(
+        x=[char1],
+        y=[char2],
+        z=[char3],
+        mode='markers',
+        marker=dict(size=8, color='MediumSeaGreen', symbol='circle')
+    )])
+
+    # Update the layout
+    # ... [previous code remains the same]
+
+    # Update the layout
+    fig.update_layout(
+        width = 700,
+        height = 500,
+        scene=dict(
+            xaxis=dict(
+                title='Agency vs Fatalism',
+                range=[-1, 1]  # Set the range for x-axis
+            ),
+            yaxis=dict(
+                title='Optimism vs Pessimism',
+                range=[-1, 1]  # Set the range for y-axis
+            ),
+            zaxis=dict(
+                title='Technical vs Non-Technical',
+                range=[-1, 1]  # Set the range for z-axis
+            )
+        ),
+    )
+    st.plotly_chart(fig)
+
 # Streamlit app
 def main():
     
     st.set_page_config(
-        page_title='Your AI Identity',  # Add your app title here
+        page_title='Your AI Identity Quiz',  # Add your app title here
         layout='centered',  # Can be "centered" or "wide". "wide" is the default.
         page_icon='📊'
     )
@@ -133,7 +197,7 @@ def main():
     with open('3-axes.svg', 'r') as file:
         svg = file.read()
 
-    st.sidebar.title("Your AI Identity")
+    st.sidebar.title("Your AI Identity Quiz")
     st.sidebar.write('☞ Your answers are not recorded')
     st.sidebar.write('')
     st.sidebar.write('')
@@ -154,43 +218,15 @@ def main():
 
     if submit_button:
         char1, char2, char3 = calculate_characteristics()
+        st.markdown('---')
         st.write(f'##### Your AI personality is: ')
         st.write(f'# `{classify_ai_personality(char1, char2, char3)}`')
-        st.write(f'##### See where you lie on the spectrum:')
+        #st.write(f'##### See where you lie on the spectrum:')
 
-        # 3D Plotting using Plotly
-        fig = go.Figure(data=[go.Scatter3d(
-            x=[char1],
-            y=[char2],
-            z=[char3],
-            mode='markers',
-            marker=dict(size=10, color='red', symbol='diamond')
-        )])
-
-        # Update the layout
-        # ... [previous code remains the same]
-
-        # Update the layout
-        fig.update_layout(
-            width = 700,
-            height = 800,
-            scene=dict(
-                xaxis=dict(
-                    title='Agency vs Fatalism',
-                    range=[-1, 1]  # Set the range for x-axis
-                ),
-                yaxis=dict(
-                    title='Optimism vs Pessimism',
-                    range=[-1, 1]  # Set the range for y-axis
-                ),
-                zaxis=dict(
-                    title='Technical vs Non-Technical',
-                    range=[-1, 1]  # Set the range for z-axis
-                )
-            ),
-        )
-
-        st.plotly_chart(fig)
-
+        # Echart
+        render_basic_radar([(char1+1)/2, (char2+1)/2, (char3+1)/2])
+        # Plotly
+        st.markdown('---')
+        render_plotly(char1, char2, char3)
 if __name__ == "__main__":
     main()
