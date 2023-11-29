@@ -133,9 +133,10 @@ def main():
         svg = file.read()
 
     st.sidebar.markdown(svg, unsafe_allow_html=True)
-    st.sidebar.markdown('##### **Made by** Justin Lee 🐯')
+    st.sidebar.markdown('**Made by** Justin Lee 🐯')
 
     st.title("Your AI Identity")
+    st.write('')
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
     with st.form(key='questions_form'):
