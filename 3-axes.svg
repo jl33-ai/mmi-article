@@ -2,13 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="94.740997mm"
-   height="71.430412mm"
-   viewBox="0 0 236.85249 178.57603"
+   width="81.249939mm"
+   height="62.601658mm"
+   viewBox="0 0 203.12484 156.50414"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a84865, 2022-12-01)"
    sodipodi:docname="3-axes.svg"
+   inkscape:export-filename="../../../Downloads/thumb.png"
+   inkscape:export-xdpi="450.16647"
+   inkscape:export-ydpi="450.16647"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -25,13 +28,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.4513989"
-     inkscape:cx="-39.876039"
-     inkscape:cy="343.377"
+     inkscape:zoom="2.0523643"
+     inkscape:cx="116.69468"
+     inkscape:cy="95.743235"
      inkscape:window-width="1512"
-     inkscape:window-height="916"
+     inkscape:window-height="917"
      inkscape:window-x="0"
-     inkscape:window-y="38"
+     inkscape:window-y="65"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -81,7 +84,7 @@
        x2="156.42635"
        y2="158.94936"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(7.654908,-9.6962168)" />
+       gradientTransform="translate(11.222008,-11.007158)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient1146"
@@ -91,97 +94,231 @@
        x2="59.203671"
        y2="158.0768"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(7.654908,-9.6962168)" />
+       gradientTransform="translate(11.222008,-11.007158)" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4306"
+       x="-0.0076689943"
+       y="-0.010171668"
+       width="1.015338"
+       height="1.0203433">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.60547208"
+         id="feGaussianBlur4308" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1064"
+       id="linearGradient4324"
+       x1="40.580078"
+       y1="147.94238"
+       x2="167.64844"
+       y2="147.94238"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4326"
+       x="-0.07034439"
+       y="-12.748045"
+       width="1.1406888"
+       height="26.496089">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="3.7243944"
+         id="feGaussianBlur4328" />
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1064"
+       id="linearGradient4693"
+       gradientUnits="userSpaceOnUse"
+       x1="40.580078"
+       y1="147.94238"
+       x2="167.64844"
+       y2="147.94238" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1064"
+       id="linearGradient4695"
+       gradientUnits="userSpaceOnUse"
+       x1="40.580078"
+       y1="147.94238"
+       x2="167.64844"
+       y2="147.94238" />
   </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-10.259216,-77.069584)">
+     transform="translate(-3.4375638,-70.24793)">
     <g
-       id="g425"
-       transform="translate(3.5671004,-1.3109416)">
+       id="path4310"
+       style="opacity:0.589431;fill:url(#linearGradient4324);fill-opacity:1;filter:url(#filter4326)">
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         d="M 100.54739,85.719268 V 212.787"
-         id="path236"
-         inkscape:export-filename="path236.png"
-         inkscape:export-xdpi="187.66997"
-         inkscape:export-ydpi="187.66997" />
+         style="color:#000000;fill:url(#linearGradient4693);fill-opacity:1;stroke-width:0.7;-inkscape-stroke:none;paint-order:markers fill stroke"
+         d="M 167.64836,147.94219 H 40.580621"
+         id="path4314" />
       <path
-         style="fill:none;stroke:#ffffff;stroke-width:0.700001;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         d="M 166.90477,112.87748 34.190022,185.62877"
-         id="path2354" />
+         style="color:#000000;fill:url(#linearGradient4695);fill-opacity:1;-inkscape-stroke:none;paint-order:markers fill stroke"
+         d="m 40.580078,147.5918 v 0.70117 H 167.64844 v -0.70117 z"
+         id="path4316" />
+    </g>
+    <g
+       id="g4304"
+       style="opacity:0.21305182;mix-blend-mode:normal;filter:url(#filter4306)">
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
-         x="87.565025"
-         y="82.340736"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="91.132126"
+         y="81.029793"
+         id="text4282"><tspan
+           sodipodi:role="line"
+           id="tspan4280"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="91.132126"
+           y="81.029793">optimism</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="89.930016"
+         y="218.79655"
+         id="text4286"><tspan
+           sodipodi:role="line"
+           id="tspan4284"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="89.930016"
+           y="218.79655">pessimism</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="10.891614"
+         y="192.35025"
+         id="text4290"><tspan
+           sodipodi:role="line"
+           id="tspan4288"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="10.891614"
+           y="192.35025">technical</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="156.94737"
+         y="107.00079"
+         id="text4294"><tspan
+           sodipodi:role="line"
+           id="tspan4292"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="156.94737"
+           y="107.00079">non-technical</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="171.67316"
+         y="149.07446"
+         id="text4298"><tspan
+           sodipodi:role="line"
+           id="tspan4296"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="171.67316"
+           y="149.07446">agency</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="9.6895208"
+         y="149.07446"
+         id="text4302"><tspan
+           sodipodi:role="line"
+           id="tspan4300"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="9.6895208"
+           y="149.07446">fatalism</tspan></text>
+    </g>
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 104.11449,84.408326 V 211.47606"
+       id="path236"
+       inkscape:export-filename="path236.png"
+       inkscape:export-xdpi="187.66997"
+       inkscape:export-ydpi="187.66997" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.700001;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 170.47187,111.56654 37.757122,184.31783"
+       id="path2354" />
+    <g
+       id="g4278">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="91.132126"
+         y="81.029793"
          id="text243"><tspan
            sodipodi:role="line"
            id="tspan241"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997"
-           x="87.565025"
-           y="82.340736">optimism</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="91.132126"
+           y="81.029793">optimism</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
-         x="86.362915"
-         y="220.1075"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="89.930016"
+         y="218.79655"
          id="text355"><tspan
            sodipodi:role="line"
            id="tspan353"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997"
-           x="86.362915"
-           y="220.1075">pessimism</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="89.930016"
+           y="218.79655">pessimism</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
-         x="7.3245134"
-         y="193.66119"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="10.891614"
+         y="192.35025"
          id="text359"><tspan
            sodipodi:role="line"
            id="tspan357"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997"
-           x="7.3245134"
-           y="193.66119">technical</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="10.891614"
+           y="192.35025">technical</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
-         x="153.38028"
-         y="108.31173"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="156.94737"
+         y="107.00079"
          id="text413"><tspan
            sodipodi:role="line"
            id="tspan411"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997"
-           x="153.38028"
-           y="108.31173">non-technical</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="156.94737"
+           y="107.00079">non-technical</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
-         x="168.10606"
-         y="150.38541"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="171.67316"
+         y="149.07446"
          id="text417"><tspan
            sodipodi:role="line"
            id="tspan415"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997"
-           x="168.10606"
-           y="150.38541">agency</tspan></text>
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="171.67316"
+           y="149.07446">agency</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
-         x="6.1224208"
-         y="150.38541"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997;paint-order:markers fill stroke"
+         x="9.6895208"
+         y="149.07446"
          id="text421"><tspan
            sodipodi:role="line"
            id="tspan419"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#ffffff;stroke:none;stroke-width:0.699997"
-           x="6.1224208"
-           y="150.38541">fatalism</tspan></text>
-      <path
-         style="fill:url(#linearGradient1148);fill-opacity:1;stroke:url(#linearGradient1066);stroke-width:0.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
-         d="M 164.08126,149.25313 H 37.013521"
-         id="path2352" />
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.53102px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro, @wght=400';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 400;fill:#000000;stroke:none;stroke-width:0.699997"
+           x="9.6895208"
+           y="149.07446">fatalism</tspan></text>
     </g>
+    <path
+       style="fill:url(#linearGradient1148);fill-opacity:1;stroke:url(#linearGradient1066);stroke-width:0.7;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
+       d="M 167.64836,147.94219 H 40.580621"
+       id="path2352" />
   </g>
 </svg>

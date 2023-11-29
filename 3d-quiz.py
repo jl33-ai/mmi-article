@@ -198,6 +198,7 @@ def main():
         svg = file.read()
 
     st.sidebar.title("Your AI Identity Quiz")
+    st.sidebar.write('Take the quiz to see your **AI-personality type:**')
     
     st.sidebar.write('')
     st.sidebar.write('')
@@ -210,7 +211,6 @@ def main():
     st.sidebar.markdown('**Made by** Justin Lee 🐯')
 
 
-    st.write('Take the quiz to see your **AI-personality type:**')
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
     with st.form(key='questions_form'):
