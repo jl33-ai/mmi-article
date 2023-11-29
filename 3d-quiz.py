@@ -128,14 +128,16 @@ def main():
         layout='centered',  # Can be "centered" or "wide". "wide" is the default.
         page_icon='📊'
     )
-    st.sidebar.markdown('Find the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
+    
     with open('3-axes.svg', 'r') as file:
         svg = file.read()
 
     st.sidebar.markdown(svg, unsafe_allow_html=True)
+    st.sidebar.markdown('Find the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
     st.sidebar.markdown('**Made by** Justin Lee 🐯')
 
     st.title("Your AI Identity")
+    st.write('')
     st.write('')
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
