@@ -198,16 +198,19 @@ def main():
         svg = file.read()
 
     st.sidebar.title("Your AI Identity Quiz")
-    st.sidebar.write('☞ Your answers are not recorded')
+    
     st.sidebar.write('')
     st.sidebar.write('')
     st.sidebar.write('')
     st.sidebar.markdown(svg, unsafe_allow_html=True)
-    st.sidebar.markdown('Find the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
+    st.sidebar.markdown('---')
+    st.sidebar.write('☞ Your answers are not recorded')
+    st.sidebar.write('☞ These calculations are very approximate and should not be taken seriously')
+    st.sidebar.markdown('☞ See the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
     st.sidebar.markdown('**Made by** Justin Lee 🐯')
 
 
-
+    st.write('Take the quiz to see your **AI-personality type:**')
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
     with st.form(key='questions_form'):
