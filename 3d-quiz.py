@@ -4,6 +4,7 @@ from random import sample
 
 # Add a quote and a diagram from the side. 
 
+
 questions = [
     # Technical vs Non-Technical
     "I grasp how AI algorithms learn and make decisions.",
@@ -132,13 +133,17 @@ def main():
     with open('3-axes.svg', 'r') as file:
         svg = file.read()
 
+    st.sidebar.title("Your AI Identity")
+    st.sidebar.write('☞ Your answers are not recorded')
+    st.sidebar.write('')
+    st.sidebar.write('')
+    st.sidebar.write('')
     st.sidebar.markdown(svg, unsafe_allow_html=True)
     st.sidebar.markdown('Find the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
     st.sidebar.markdown('**Made by** Justin Lee 🐯')
 
-    st.title("Your AI Identity")
-    st.write('')
-    st.write('')
+
+
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
     with st.form(key='questions_form'):
