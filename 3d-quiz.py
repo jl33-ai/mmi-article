@@ -2,6 +2,8 @@ import streamlit as st
 import plotly.graph_objects as go
 from random import sample
 
+# Add a quote and a diagram from the side. 
+
 questions = [
     # Technical vs Non-Technical
     "I grasp how AI algorithms learn and make decisions.",
@@ -124,10 +126,14 @@ def main():
     st.set_page_config(
         page_title='Your AI Identity',  # Add your app title here
         layout='centered',  # Can be "centered" or "wide". "wide" is the default.
-
+        page_icon='📊'
     )
     st.sidebar.markdown('Find the original article at [MMI Impact Update](https://www.melbournemicrofinance.com/impactupdate?fbclid=IwAR3Igs_GccNYKUucYPulmFl8OnI1I5oMEpwBkCYWjUEuFlcjn6jnGCf1448)')
-    st.sidebar.write('##### Made by Justin Lee')
+    with open('3-axes.svg', 'r') as file:
+        svg = file.read()
+
+    st.sidebar.markdown(svg, unsafe_allow_html=True)
+    st.sidebar.markdown('##### **Made by** Justin Lee 🐯')
 
     st.title("Your AI Identity")
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
