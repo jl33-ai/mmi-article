@@ -1,11 +1,12 @@
 import streamlit as st
 import plotly.graph_objects as go
+from random import sample
 
 questions = [
     # Technical vs Non-Technical
     "I grasp how AI algorithms learn and make decisions.",
     "The intricacies of AI make its ethical deployment challenging.",
-    "A technical background is crucial to understanding the implications of AI.",
+    "I would feel comfortable explaining how a neural network works to a friend.",
     "I stay updated on AI advancements and their societal discussions.",
     "AI ethics should primarily involve those deeply versed in the technology.",
     "My trust in AI is based on its reliability, not the complexity behind it.",
@@ -14,19 +15,18 @@ questions = [
     "AI will be a net positive for job creation.",
     "In the next two decades, AI will substantially elevate our quality of life.",
     "The media tends to exaggerate the risks associated with AI.",
-    "AI's potential in enhancing healthcare makes me optimistic.",
-    "Concerns about AI-induced job displacement are likely overstated.",
-    "AI will be pivotal in personalizing education to fit individual needs.",
+    "I would feel comfortable allowing an AI tutor to teach my child.",
+    "I would ask ChatGPT for help if I was CEO of my company.",
+    "I believe that there will be no more AI winters.",
 
     # Agency vs Fatalism
     "Humans have the capacity to steer AI development effectively.",
     "AI's evolution is beyond significant human influence.",
-    "Through proactive engagement, we can shape AI's trajectory.",
+    "I believe that we will always be able to shape AI's trajectory.",
     "AI's influence on our daily decision-making is overstated.",
     "I'm confident that I can adjust my career amidst AI changes.",
     "Current laws will adequately regulate AI's societal effects.",
 ]
-
 
 # Questions aimed at evaluating views on AI
 questionsx = [
@@ -62,12 +62,15 @@ questionsx = [
     "The influence of AI on our daily choices is often exaggerated.",
 ]
 
-# Function to calculate characteristics based on answers
-def calculate_characteristics(answers):
-    agency_vs_fatalism = sum(answers[:6])/6 -0.5
-    optimism_vs_pessimism = sum(answers[6:12])/6-0.5
-    technical_vs_nontechnical = sum(answers[12:])/6-0.5
-    return agency_vs_fatalism, optimism_vs_pessimism, technical_vs_nontechnical
+random_q_order = sample(range(0, 18), 18)
+responses = [3] * 18 # = [3 for _ in range(18)]
+
+# calculate each of 3 axes
+def calculate_characteristics():
+    agency_vs_fatalism = sum(responses[:6])
+    optimism_vs_pessimism = sum(responses[6:12])
+    technical_vs_nontechnical = sum(responses[12:])
+    return agency_vs_fatalism/15-1, optimism_vs_pessimism/15-1, technical_vs_nontechnical/15-1
 
 
 def classify_ai_personality(agency_score, optimism_score, technical_score):
@@ -122,15 +125,13 @@ def main():
     st.write("##### `1` = Strongly Disagree, `3` = Neutral, `5` = Strongly Agree")
 
     with st.form(key='questions_form'):
-        answers = []
-        for i, question in enumerate(questions, 1):
-            answer = st.slider(question, 1, 5, 3)
-            answers.append(answer)
-
+        for i in random_q_order: 
+            answer = st.slider(questions[i], 1, 5, 3)
+            responses[i] = answer
         submit_button = st.form_submit_button(label='Submit')
 
-    if submit_button and len(answers) == 18:
-        char1, char2, char3 = calculate_characteristics(answers)
+    if submit_button:
+        char1, char2, char3 = calculate_characteristics()
         st.write(f'##### Your AI personality is: **{classify_ai_personality(char1, char2, char3)}**')
         st.write('See where you lie on the spectrum:')
 
@@ -144,13 +145,25 @@ def main():
         )])
 
         # Update the layout
+        # ... [previous code remains the same]
+
+        # Update the layout
         fig.update_layout(
             width = 800,
             height = 800,
             scene=dict(
-                xaxis_title='Agency vs Fatalism',
-                yaxis_title='Optimism vs Pessimism',
-                zaxis_title='Technical vs Non-Technical'
+                xaxis=dict(
+                    title='Agency vs Fatalism',
+                    range=[-1, 1]  # Set the range for x-axis
+                ),
+                yaxis=dict(
+                    title='Optimism vs Pessimism',
+                    range=[-1, 1]  # Set the range for y-axis
+                ),
+                zaxis=dict(
+                    title='Technical vs Non-Technical',
+                    range=[-1, 1]  # Set the range for z-axis
+                )
             ),
         )
 
