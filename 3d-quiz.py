@@ -72,7 +72,7 @@ def calculate_characteristics():
     technical_vs_nontechnical = sum(responses[:6])
     optimism_vs_pessimism = sum(responses[6:12])
     agency_vs_fatalism = sum(responses[12:])
-    return technical_vs_nontechnical/15-1, optimism_vs_pessimism/15-1, agency_vs_fatalism/15-1
+    return technical_vs_nontechnical/18-1, optimism_vs_pessimism/18-1, agency_vs_fatalism/18-1
 
 
 def classify_ai_personality(agency_score, optimism_score, technical_score):
@@ -223,7 +223,7 @@ def main():
         char1, char2, char3 = calculate_characteristics()
         st.markdown('---')
         st.write(f'##### Your AI personality is: ')
-        st.write(f'# `{classify_ai_personality((char1+1)/2, (char2+1)/2, (char3+1)/2)}`')
+        st.write(f'# `{classify_ai_personality(char1, char2, char3)}`')
         #st.write(f'##### See where you lie on the spectrum:')
 
         # Echart
