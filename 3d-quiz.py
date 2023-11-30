@@ -223,7 +223,7 @@ def main():
         char1, char2, char3 = calculate_characteristics()
         st.markdown('---')
         st.write(f'##### Your AI personality is: ')
-        st.write(f'# `{classify_ai_personality(char1, char2, char3)}`')
+        st.write(f'# `{classify_ai_personality((char1+1)/2, (char2+1)/2, (char3+1)/2)}`')
         #st.write(f'##### See where you lie on the spectrum:')
 
         # Echart
