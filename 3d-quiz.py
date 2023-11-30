@@ -78,8 +78,8 @@ def calculate_characteristics():
 def classify_ai_personality(agency_score, optimism_score, technical_score):
     # Helper function to classify score
     def classify(score):
-        if score >= 4: return 'High'
-        elif score >= 2: return 'Medium'
+        if score >= 0.5: return 'High'
+        elif score >= -0.5: return 'Medium'
         else: return 'Low'
 
     # Classify each score
